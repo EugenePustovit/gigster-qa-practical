@@ -1,0 +1,38 @@
+# ---- ENVIRONMENT SETTINGS ----
+
+environments:
+  test:
+    url: "http://192.168.99.100/"
+
+# ---- USERS SETTINGS ----
+
+users:
+  admin:
+    username: "admin"
+    password: "password"
+  user:
+    username: "user"
+    password: "password"
+
+# ---- TEST DATA ----
+
+expenses:
+  - date: "2017-08-12"
+    time: "12:30 pm"
+    amount: "3"
+    description: "coffee"
+  - date: "2017-09-21"
+    time: "7:13 pm"
+    amount: "11"
+    description: "beer"
+  - date: "2017-09-27"
+    time: "1:47 am"
+    amount: "36"
+    description: "taxi"
+
+report:
+  start_date: "2017-04-07"
+  end_date: "2017-09-23"
+  number_of_expenses: 2
+  subtotal: 14
+
