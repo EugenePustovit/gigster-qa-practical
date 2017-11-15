@@ -1,4 +1,4 @@
-default: --profile html_report
+default: --profile html_report --profile chrome_driver
 
 # reports
 html_report: --format html --out report/report.html --format pretty
@@ -6,3 +6,6 @@ html_report: --format html --out report/report.html --format pretty
 # drivers
 chrome: DRIVER=chrome
 firefox: DRIVER=firefox
+
+# driver path
+chrome_driver: WEBDRIVER="/usr/local/bin/chromedriver"
