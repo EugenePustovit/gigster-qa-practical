@@ -1,0 +1,17 @@
+language: ruby
+rvm:
+  - 2.4
+
+before_install:
+  - cd tests
+
+install:
+  - gem install bundler
+  - bundle install
+  - apt-get install chromedriver
+
+addons:
+  chrome: stable
+
+before_script: cd tests
+script: cucumber
