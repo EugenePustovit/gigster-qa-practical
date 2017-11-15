@@ -8,10 +8,9 @@ before_install:
 install:
   - gem install bundler
   - bundle install
-  - sudo apt-get install chromedriver
 
 addons:
   chrome: stable
+  chromedriver: stable
 
-before_script: cd tests
 script: cucumber
