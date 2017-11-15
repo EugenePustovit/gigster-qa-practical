@@ -5,8 +5,7 @@ Feature: Expenses
 
   Scenario: Save expenses to the report
     Given Navigate to the main page
-#    When Sign up as a user
-    When Login as a user
+    When Sign up as a user
     And Create a few expenses
     And Generate a report
     Then The report should be displayed
