@@ -8,7 +8,7 @@ before_install:
 install:
   - gem install bundler
   - bundle install
-  - apt-get install chromedriver
+  - sudo apt-get install chromedriver
 
 addons:
   chrome: stable
