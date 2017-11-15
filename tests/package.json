@@ -1,0 +1,8 @@
+{
+  "name": "gigster-practical-tests",
+  "version": "1.0.0",
+  "description": "web tests",
+  "scripts": {
+    "test": "cucumber"
+  }
+}
