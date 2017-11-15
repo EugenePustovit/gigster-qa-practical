@@ -8,8 +8,11 @@ before_install:
 install:
   - gem install bundler
   - bundle install
-  - sudo apt-get install chromium-chromedriver
-  - sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
+  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  - sudo dpkg -i google-chrome*.deb
+  - export CHROME_BIN=/usr/bin/google-chrome
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
 
 addons:
   chrome: stable
