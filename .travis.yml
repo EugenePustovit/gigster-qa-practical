@@ -18,7 +18,6 @@ addons:
   chrome: stable
 
 before_install:
-  - docker-compose up &
   - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 
 script: cucumber
